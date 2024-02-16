@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightcyan;
+        }
+
+        header {
+            color: black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: inline-flex;
+            gap: 10px;
+        }
+    </style>
+    <title>Chandana Sree - Personal Website</title>
+</head>
+<body>
+    <header>
+        <h1>Chandana Sree</h1>
+        <p>Web Developer</p>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! I am a web developer passionate about creating awesome websites.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Resume using html,css and js</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Form submitted!");
+        });
+    </script>
+</body>
+</html>
